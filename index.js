@@ -102,13 +102,13 @@ function PinoColada () {
 
   function formatMessage (obj) {
     var msg = formatMessageName(obj.message)
-    if (obj.level === 'error') return chalk.red(msg)
-    if (obj.level === 'trace') return chalk.white(msg)
-    if (obj.level === 'warn') return chalk.magenta(msg)
-    if (obj.level === 'debug') return chalk.yellow(msg)
-    if (obj.level === 'info' || obj.level === 'userlvl') return chalk.green(msg)
+    if (obj.level === 'error') return chalk.white.bgRed(msg)
+    if (obj.level === 'trace') return chalk.gray(msg)
+    if (obj.level === 'warn') return chalk.yellow(msg)
+    if (obj.level === 'debug') return chalk.whiteBright(msg)
+    if (obj.level === 'info' || obj.level === 'userlvl') return chalk.cyanBright(msg)
     if (obj.level === 'fatal') {
-      var pretty = chalk.white.bgRed(msg)
+      var pretty = chalk.white.bgMagenta(msg)
       return obj.stack
         ? pretty + nl + obj.stack
         : pretty
