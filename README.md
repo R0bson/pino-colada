@@ -1,8 +1,19 @@
 # pino-colada 🍹
+
+## This is a fork
+Changed only colors from:
+
+![pino-colada](./old_colors.png)
+
+to:
+
+![pino-colada](./new_colors.png)
+
+
 [![npm version][1]][2] [![build status][3]][4]
 [![downloads][5]][6] [![js-standard-style][7]][8]
 
-A cute [ndjson](http://ndjson.org) formatter for [pino](https://github.com/pinojs/pino). 
+A cute [ndjson](http://ndjson.org) formatter for [pino](https://github.com/pinojs/pino).
 
 ![pino-colada](./pino-colada.png)
 
